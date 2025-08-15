@@ -2,7 +2,9 @@ import torch
 
 
 def test(model, loss_func, test_loader, device):
+
     model.eval()
+
     with torch.inference_mode():
         test_loss = 0.0
         test_acc = 0.0

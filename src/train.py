@@ -18,6 +18,9 @@ def train(
         "train_acc": [],
         "val_acc": [],
     }
+
+    model.train()
+
     for epoch in range(epochs):
         train_loss = 0.0
         train_acc = 0.0
