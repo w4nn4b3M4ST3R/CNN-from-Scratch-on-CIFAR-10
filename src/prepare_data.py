@@ -19,10 +19,10 @@ def prepare_data():
     )
 
     full_train_ds = CIFAR10(
-        root="../dataset/train", train=True, transform=transform, download=True
+        root="dataset/train", train=True, transform=transform, download=True
     )
     test_ds = CIFAR10(
-        root="../dataset/test",
+        root="dataset/test",
         train=False,
         transform=transform,
         download=True,
